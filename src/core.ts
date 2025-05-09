@@ -1,14 +1,19 @@
 // For more information, see https://crawlee.dev/
 import { Configuration, PlaywrightCrawler, downloadListOfUrls } from "crawlee";
-import { readFile, writeFile } from "fs/promises";
+import { readFile, writeFile, mkdir } from "fs/promises";
 import { glob } from "glob";
 import { Config, configSchema } from "./config.js";
 import { Page } from "playwright";
 import { isWithinTokenLimit } from "gpt-tokenizer";
 import { PathLike } from "fs";
+import path from "path";
+import slugify from "slugify";
 
 let pageCounter = 0;
 let crawler: PlaywrightCrawler;
+
+const chromePath =
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 
 export function getPageHtml(page: Page, selector = "body") {
   return page.evaluate((selector) => {
@@ -57,52 +62,47 @@ export async function crawl(config: Config) {
     crawler = new PlaywrightCrawler(
       {
         // Use the requestHandler to process each of the crawled pages.
-        async requestHandler({ request, page, enqueueLinks, log, pushData }) {
+        launchContext: {
+          launchOptions: {
+            executablePath: chromePath,
+            headless: false,
+          },
+        },
+        async requestHandler({ request, page, log }) {
           const title = await page.title();
           pageCounter++;
           log.info(
             `Crawling: Page ${pageCounter} / ${config.maxPagesToCrawl} - URL: ${request.loadedUrl}...`,
           );
 
-          // Use custom handling for XPath selector
-          if (config.selector) {
-            if (config.selector.startsWith("/")) {
-              await waitForXPath(
-                page,
-                config.selector,
-                config.waitForSelectorTimeout ?? 1000,
-              );
-            } else {
-              await page.waitForSelector(config.selector, {
-                timeout: config.waitForSelectorTimeout ?? 1000,
-              });
-            }
-          }
+          // Wait for the selector to appear before extracting content
+          const selector = config.selector || "body";
+          await page.waitForSelector(selector, {
+            timeout: config.waitForSelectorTimeout,
+          });
 
-          const html = await getPageHtml(page, config.selector);
+          let html = await getPageHtml(page, selector);
+          html = html.replace(/<\|endoftext\|>/g, "");
 
-          // Save results as JSON to ./storage/datasets/default
-          await pushData({ title, url: request.loadedUrl, html });
+          // Save each result as a unique file
+          const safeFilename =
+            slugify(request.url, { remove: /[*+~.()'!:@/?&=]/g }) + ".json";
+          const outputDir = "output";
+          const outputPath = path.join(outputDir, safeFilename);
+          await mkdir(outputDir, { recursive: true });
+          await writeFile(
+            outputPath,
+            JSON.stringify({ title, url: request.loadedUrl, html }, null, 2),
+          );
 
           if (config.onVisitPage) {
-            await config.onVisitPage({ page, pushData });
+            // No need to pass pushData as it's no longer used
           }
-
-          // Extract links from the current page
-          // and add them to the crawling queue.
-          await enqueueLinks({
-            globs:
-              typeof config.match === "string" ? [config.match] : config.match,
-            exclude:
-              typeof config.exclude === "string"
-                ? [config.exclude]
-                : config.exclude ?? [],
-          });
         },
         // Comment this option to scrape the full website.
         maxRequestsPerCrawl: config.maxPagesToCrawl,
-        // Uncomment this option to see the browser window.
-        // headless: false,
+        // Uncomment/comment this option to see or not see the browser window. headless: false = see the browser window.
+        headless: false,
         preNavigationHooks: [
           // Abort requests for certain resource types and add cookies
           async (crawlingContext, _gotoOptions) => {
@@ -141,18 +141,16 @@ export async function crawl(config: Config) {
       }),
     );
 
-    const isUrlASitemap = /sitemap.*\.xml$/.test(config.url);
+    const isUrlASitemap =
+      typeof config.url === "string" && /sitemap.*\.xml$/.test(config.url);
 
-    if (isUrlASitemap) {
+    if (isUrlASitemap && typeof config.url === "string") {
       const listOfUrls = await downloadListOfUrls({ url: config.url });
-
-      // Add the initial URL to the crawling queue.
       await crawler.addRequests(listOfUrls);
-
-      // Run the crawler
       await crawler.run();
+    } else if (Array.isArray(config.url)) {
+      await crawler.run(config.url);
     } else {
-      // Add first URL to the queue and start the crawl.
       await crawler.run([config.url]);
     }
   }

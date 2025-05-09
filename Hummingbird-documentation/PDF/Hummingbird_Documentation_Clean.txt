@@ -1,0 +1,302 @@
+Hummingbird Documentation | Documentation
+ Skip Navigation 
+ Documentation 
+ Hummingbird Documentation 
+
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 1 of 46 symbols inside <root> 
+Getting Started
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 2 of 46 symbols inside <root> 
+Getting Started with Hummingbird
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+3 of 46 symbols inside <root> containing 8 symbols
+Build a Todos application.
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 4 of 46 symbols inside <root> 
+Hummingbird Server
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 5 of 46 symbols inside <root> 
+Router
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 6 of 46 symbols inside <root> 
+Request Decoding
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 7 of 46 symbols inside <root> 
+Response Encoding
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 8 of 46 symbols inside <root> 
+Request Contexts
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 9 of 46 symbols inside <root> 
+Middleware
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 10 of 46 symbols inside <root> 
+Error Handling
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 11 of 46 symbols inside <root> 
+Logging, Metrics and Tracing
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 12 of 46 symbols inside <root> 
+Result Builder Router
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+13 of 46 symbols inside <root> containing 4 symbols
+Server protocol
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 14 of 46 symbols inside <root> 
+Service Lifecycle
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 15 of 46 symbols inside <root> 
+Testing
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 16 of 46 symbols inside <root> 
+Persistent data
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 17 of 46 symbols inside <root> 
+Migrating to Hummingbird v2
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 18 of 46 symbols inside <root> 
+Authentication
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 19 of 46 symbols inside <root> 
+Authenticator Middleware
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 20 of 46 symbols inside <root> 
+Sessions
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 21 of 46 symbols inside <root> 
+One Time Passwords
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 22 of 46 symbols inside <root> 
+WebSockets
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 23 of 46 symbols inside <root> 
+WebSocket Server Upgrade
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 24 of 46 symbols inside <root> 
+WebSocket Client
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 25 of 46 symbols inside <root> 
+Database Integration
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 26 of 46 symbols inside <root> 
+Postgres Migrations
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+27 of 46 symbols inside <root> containing 2 symbols
+Store Data with Fluent
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+28 of 46 symbols inside <root> containing 2 symbols
+Store Data with MongoKitten
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 29 of 46 symbols inside <root> 
+Offloading work
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+30 of 46 symbols inside <root> containing 3 symbols
+Jobs
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 31 of 46 symbols inside <root> 
+Mustache
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 32 of 46 symbols inside <root> 
+Mustache Syntax
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 33 of 46 symbols inside <root> 
+Mustache Features
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+ 34 of 46 symbols inside <root> 
+Reference Documentation
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+35 of 46 symbols inside <root> containing 72 symbols
+Hummingbird
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+36 of 46 symbols inside <root> containing 25 symbols
+HummingbirdCore
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+37 of 46 symbols inside <root> containing 23 symbols
+HummingbirdAuth
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+38 of 46 symbols inside <root> containing 4 symbols
+HummingbirdCompression
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+39 of 46 symbols inside <root> containing 5 symbols
+HummingbirdFluent
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+40 of 46 symbols inside <root> containing 8 symbols
+HummingbirdLambda
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+41 of 46 symbols inside <root> containing 2 symbols
+HummingbirdPostgres
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+42 of 46 symbols inside <root> containing 5 symbols
+HummingbirdRedis
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+43 of 46 symbols inside <root> containing 30 symbols
+HummingbirdWebSocket
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+44 of 46 symbols inside <root> containing 37 symbols
+Jobs
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+45 of 46 symbols inside <root> containing 15 symbols
+Mustache
+ To navigate the symbols, press Up Arrow, Down Arrow, Left Arrow or Right Arrow 
+46 of 46 symbols inside <root> containing 20 symbols
+WSClient
+
+ 46 items were found. Tab back to navigate through them. 
+ / 
+ Navigator is ready 
+Hummingbird Documentation
+Documentation for Hummingbird the lightweight, flexible, modern server framework.
+Hummingbird
+Hummingbird is a lightweight and flexible web application framework. It provides a router for directing different endpoints to their handlers, middleware for processing requests before they reach your handlers and processing the responses returned, custom encoding/decoding of requests and responses, TLS and HTTP2.
+If you’re new to Hummingbird, start here: 
+Build a Todos application.
+import
+ Hummingbird
+
+// create router and add a single GET /hello route
+
+let
+ router 
+=
+
+Router
+()
+
+    .get(
+"hello"
+) { request, 
+_
+ -> 
+String
+
+in
+
+return
+
+"Hello"
+
+    }
+
+// create application using router
+
+let
+ app 
+=
+
+Application
+(router: router)
+
+// run hummingbird application
+
+try
+
+await
+ app.runService()
+
+Below is a list of guides and tutorials to help you get started with building your own Hummingbird based web application.
+Topics
+Getting Started
+Getting Started with Hummingbird
+Create a new project on GitHub or an app locally from a starter template.
+Build a Todos application.
+A tutorial showing you how to build a simple Todos application that allows you to store, access, edit and delete Todos in a database, using Hummingbird and PostgresNIO.
+Hummingbird Server
+Router
+The router directs requests to their handlers based on the contents of their path.
+Request Decoding
+Decoding of Requests with JSON content and other formats.
+Response Encoding
+Writing Responses using JSON and other formats.
+Request Contexts
+Controlling contextual data provided to middleware and route handlers
+Middleware
+Processing requests and responses outside of request handlers.
+Error Handling
+How to build errors for the server to return.
+Logging, Metrics and Tracing
+Considered the three pillars of observability, logging, metrics and tracing provide different ways of viewing how your application is working.
+Result Builder Router
+Building your router using a result builder.
+API Reference
+Server protocol
+Support for TLS and HTTP2 upgrades
+Service Lifecycle
+Integration with Swift Service Lifecycle
+Testing
+Using the HummingbirdTesting framework to test your application
+Persistent data
+How to persist data between requests to your server.
+Migrating to Hummingbird v2
+Migration guide for converting Hummingbird v1 applications to Hummingbird v2
+Authentication
+Authenticator Middleware
+Request authentication middleware
+Sessions
+Session based authentication
+One Time Passwords
+A one time password (OTP) valid for only one login session.
+WebSockets
+Web
+Socket Server Upgrade
+Support for upgrading HTTP1 connections to WebSocket.
+Web
+Socket Client
+Connecting to WebSocket servers.
+Database Integration
+Postgres Migrations
+Managing database structure changes.
+Store Data with Fluent
+A tutorial that shows you how to set up Hummingbird 2 with Fluent to create and access your Galaxies.
+Store Data with Mongo
+Kitten
+A tutorial that shows you how to set up Hummingbird 2 with MongoKitten to create and share your kittens.
+Offloading work
+API Reference
+Jobs
+Offload work your server would be doing to another server.
+Mustache
+Mustache Syntax
+Overview of Mustache Syntax
+Mustache Features
+An overview of the features of swift-mustache.
+Reference Documentation
+Hummingbird
+Lightweight, modern, flexible server framework written in Swift.
+Hummingbird
+Core
+Swift NIO based HTTP server.
+Hummingbird
+Auth
+Authentication framework and extensions for Hummingbird.
+Hummingbird
+Compression
+Middleware for decompressing requests and compressing responses
+Hummingbird
+Fluent
+Integration with Vapor’s Fluent ORM framework.
+Hummingbird
+Lambda
+Run Hummingbird inside an AWS Lambda.
+Hummingbird
+Postgres
+Working with Postgres databases.
+Hummingbird
+Redis
+Add Redis support to Hummingbird server with RediStack.
+Hummingbird
+Web
+Socket
+Adds support for upgrading HTTP connections to WebSocket.
+Jobs
+Offload work your server would be doing to another server.
+Mustache
+Mustache template engine.
+WSClient
+Support for connecting to WebSocket server.
+ Current page is Hummingbird Documentation 
+Select a color scheme preference
+Light
+Dark
+Auto
+Exit Hover SVG Downloader
